@@ -1,9 +1,9 @@
 import shutil
 import sys
-import scan
-import normalize
+import goit_sort.scan as scan
+import goit_sort.normalize as normalize
 from pathlib import Path
-from files_generator import file_generator
+from goit_sort.files_generator import file_generator
 
 
 
