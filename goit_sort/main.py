@@ -1,10 +1,9 @@
 import shutil
 import sys
-import goit_sort.scan as scan
-import goit_sort.normalize as normalize
+import scan
+import normalize
 from pathlib import Path
-from goit_sort.files_generator import file_generator
-
+from files_generator import file_generator
 
 
 def hande_file(path, root_folder, dist):
@@ -117,7 +116,7 @@ def main(folder_path):
 
     get_folder_objects(folder_path)
 
-if name == 'main':
+if __name__ == 'main':
     path = sys.argv[1]
     print(f"Start in {path}")
 

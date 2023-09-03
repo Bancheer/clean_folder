@@ -77,7 +77,7 @@ def scan(folder):
                 others.append(new_name)
 
 
-if name == 'main':
+if __name__ == 'main':
     path = sys.argv[1]
     print(f"Start in {path}")
 

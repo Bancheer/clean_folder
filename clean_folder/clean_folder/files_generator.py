@@ -1,3 +1,4 @@
+from os import path
 import shutil
 from pathlib import Path
 from random import randint, choice, choices
@@ -68,12 +69,12 @@ def exist_parent_folder(path):
     path.mkdir(parents=True, exist_ok=True)
 
 
-def file_generator(path):
+def file_generator():
+    Path("temp")
     exist_parent_folder(path)
     generate_folder_forest(path)
     parse_folder_recursion(path)
 
 
 if __name__ == 'main':
-    parent_folder_path = Path("Temp")
-    file_generator(parent_folder_path)
+    file_generator(Path("temp"))
